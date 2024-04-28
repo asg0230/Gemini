@@ -133,4 +133,54 @@
             border-radius: 5px;
         }
 
-        .form-container button:hover {
+         .form-container button:hover {
+            background-color: #ff9f1c;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <button>Contact Us</button>
+    </header>
+
+    <main class="main">
+        <section class="product">
+            <img src="images/nike-shirt.jpg" alt="Nike Shirt">
+            <h3>Nike Dri-FIT Running Shirt</h3>
+            <p>Stay cool and comfortable during your next run with this breathable Nike Dri-FIT shirt.</p>
+            <button>Shop Now</button>
+        </section>
+
+        <section class="product">
+            <img src="images/nike-leggings.jpg" alt="Nike Leggings">
+            <h3>Nike Yoga Luxe Leggings</h3>
+            <p>Move freely and comfortably during your yoga practice with these high-waisted Nike leggings.</p>
+            <button>Shop Now</button>
+        </section>
+
+        <section class="product">
+            <img src="images/nike-shoes.jpg" alt="Nike Running Shoes">
+            <h3>Nike Air Zoom Pegasus Running Shoes</h3>
+            <p>Experience cushioning and responsiveness with these lightweight Nike running shoes.</p>
+            <button>Shop Now</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nike. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Add functionality to buttons (replace with your desired actions)
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('This button is clicked!');
+            });
+        });
+    </script>
+</body>
+</html>
